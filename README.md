@@ -1,1 +1,1 @@
-# OndrejDuda022.github.io
+There lies a rich quality website.
