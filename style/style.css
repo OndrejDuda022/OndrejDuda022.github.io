@@ -16,6 +16,11 @@ p {
     color:black;
 }
 
+a:hover {
+    color: rgb(255, 195, 0);
+    text-decoration: underline;
+  }
+
 footer {
     color:black;
     text-align: center;
@@ -48,11 +53,6 @@ footer {
 
 .card-descript {
     color: white;
-}
-
-.button-a {
-    color: white;
-    text-decoration: none;
 }
 
 .thumbnail {
