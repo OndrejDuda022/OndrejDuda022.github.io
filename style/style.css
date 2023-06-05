@@ -19,7 +19,15 @@ p {
 a:hover {
     color: rgb(255, 195, 0);
     text-decoration: underline;
-  }
+}
+
+a::before {
+    content: "";
+}
+
+a::after {
+    content: "";
+}
 
 footer {
     color:black;
