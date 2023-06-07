@@ -3,3 +3,9 @@
         width: 80%;
       }
 }
+
+@media only screen and (max-height: 700px){
+  header {
+    height: 155px;
+}
+}
