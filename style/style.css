@@ -53,10 +53,6 @@ footer {
     border-top-right-radius: 0.25rem;
   }
 
-.y-centered {
-    padding-top: 50%;
-}
-
 .rounded-border {
     border: 1px solid #000;
     border-radius: 10px;
