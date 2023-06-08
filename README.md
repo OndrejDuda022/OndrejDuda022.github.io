@@ -8,3 +8,5 @@ https://github.com/pslib-cz/2022-p1b-web-vlastni-web-OndrejDuda022
 
 #### Hello There!
 Here lies the code of a rich quality Website.
+
+Keep in mind, that website was designed for mobile devices. But it will work on PC as well.

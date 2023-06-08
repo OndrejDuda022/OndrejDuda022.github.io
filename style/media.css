@@ -4,8 +4,15 @@
       }
 }
 
-@media only screen and (max-height: 700px){
-  header {
-    height: 155px;
+@media only screen and (min-width: 600px){
+  .character-block {
+    max-width: 600px;
+    max-height: auto;
+     }
 }
+
+@media only screen and (min-width: 576px){
+  .y-centered {
+    padding-top: 50%;
+    }
 }
