@@ -4,8 +4,9 @@
       }
 }
 
-@media only screen and (max-height: 700px){
-  header {
-    height: 155px;
+@media only screen and (min-width: 600px){
+  .card {
+    max-width: 600 px;
+    max-height: auto;
 }
 }
