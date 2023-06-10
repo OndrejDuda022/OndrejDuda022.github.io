@@ -82,4 +82,9 @@ footer {
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
-  }
+}
+
+.transparent {
+    opacity: 0.5;
+}
+  
