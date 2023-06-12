@@ -13,12 +13,14 @@ header {
     width: 100%;
     min-width: 300px;
     height: 155px;
+    animation: slideIn 1s ease;
 }
 
 body {
     padding-top: 155px;
     background-color: rgb(243, 243, 243);
     font-family: 'Maven Pro', sans-serif;
+    animation: fadeIn 1s ease;
 }
 
 h1{
@@ -86,5 +88,23 @@ footer {
 
 .transparent {
     opacity: 0.5;
+}
+  
+@keyframes slideIn {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
   
