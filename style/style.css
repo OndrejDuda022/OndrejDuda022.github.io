@@ -90,7 +90,6 @@ header {
 
 body {
     padding-top: 155px;
-    background-color: rgb(243, 243, 243);
     font-family: 'Maven Pro', sans-serif;
     animation: fade-in 1s ease;
 }
@@ -160,6 +159,24 @@ footer {
 
 .transparent {
     opacity: 0.5;
+}
+
+.parallax {
+
+  background-image: url("../images/background.jpg");
+
+ 
+  min-height: 500px;
+
+ 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.non-parallax {
+  background-color: rgb(243, 243, 243);
 }
   
 @keyframes slide-top {
