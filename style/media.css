@@ -7,14 +7,12 @@
 @media only screen and (min-width: 600px){
   .character-block {
     max-width: 600px;
-    max-height: auto;
      }
 }
 
 @media only screen and (min-width: 600px){
   .favourite-block {
     max-width: 800px;
-    max-height: auto;
      }
 }
 
