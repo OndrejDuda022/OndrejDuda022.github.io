@@ -1,6 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+@keyframes slide-top {
+  0%{
+      transform: translateY(-100%);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?7qg4hs');
@@ -80,17 +116,19 @@ html {
 }
 
 header {
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    background-image: url(../images/header.png);
+    background-image: url(../images/header.avif);
     width: 100%;
     min-width: 300px;
-    height: 155px;
+    height: 190px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     animation: slide-top 1s ease;
 }
 
 body {
-    padding-top: 155px;
+    padding-top: 190px;
     font-family: 'Maven Pro', sans-serif;
     animation: fade-in 1s ease;
     height: 100%;
@@ -132,6 +170,8 @@ footer {
     border: 1px solid #D3D3D3;
     border-radius: 10px;
     padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .no-bullets {
@@ -159,43 +199,52 @@ footer {
     flex-wrap: wrap;
 }
 
+.bg-dark {
+    color: #171717;
+}
+
 .transparent {
     opacity: 0.5;
 }
 
 .parallax {
 
-  background-image: url("../images/background.jpg");
-
- 
+  background-image: url("../images/background.avif");
   min-height: 100%;
-
- 
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
+  background-repeat: repeat;
+  
 }
 
-.non-parallax {
-  background-color: white;
-}
-  
-@keyframes slide-top {
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(0);
-    }
+.creations-header {
+  height: 230px;
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.creations-body {
+  padding-top: 230px;
 }
-  
+
+.spinner {
+  animation: rotate 5s linear infinite;
+}
+
+.bouncer {
+  animation: bounce 0.5s ease infinite;
+}
+
+.zoom {
+  transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+.gallery-zoom {
+  transition: transform 0.3s ease;
+}
+
+.gallery-zoom:hover {
+  transform: scale(2.5);
+}

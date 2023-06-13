@@ -24,11 +24,10 @@
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 960px) {
   .parallax {
     background-attachment: scroll;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
   }
 }
+
+
