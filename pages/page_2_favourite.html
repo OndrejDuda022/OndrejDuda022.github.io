@@ -11,21 +11,21 @@
     <link href="../style/normalize.css" rel="stylesheet">
     <title>My Favourites</title>
 </head>
-<body>
+<body class="parallax">
     <header>
         <div class="container">
-            <h1>My Favourites</h1>
+            <h1><span class="icon-heart"></span> My Favourites</h1>
             <nav>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-primary" onclick="window.location.href = '../index.html'">Main</button>
-                    <button type="button" class="btn btn-primary" onclick="window.location.href = './page_1_about.html'">About me</button>
-                    <button type="button" class="btn btn-primary" onclick="window.location.href = 'https://pslib.cz/'">My school</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href = '../index.html'"><span class="icon-home"></span> Main</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href = './page_1_about.html'"><span class="icon-user-tie"></span> About me</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href = 'https://pslib.cz/'"><span class="icon-office"></span> My school</button>
                     <button type="button" class="btn btn-primary text-white dropdown-toggle" data-bs-toggle="dropdown">
                         Creations
                     </button>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./page_3_characters.html">Characters</a></li>
-                        <li><a class="dropdown-item" href="./page_4_games.html">Games</a></li>
+                        <li><a class="dropdown-item" href="./page_3_characters.html"><span class="icon-user-tie"></span> Characters</a></li>
+                        <li><a class="dropdown-item" href="./page_4_games.html"><span class="icon-pacman"></span> Games</a></li>
                         </ul>
                 </div>
             </nav>
@@ -34,41 +34,41 @@
     <main class="container favourite-block">
         <section class="container p-3">
             <h2 class="text-center p-3">What do I like?</h2>
-            <article class="rounded-border">
-                <h3>♧ Games</h3>
+            <article class="rounded-border non-parallax">
+                <h3><span class="icon-dice"></span> Games</h3>
                 <div class="container row">
                     <div class="text-center">
                         <h4>1. Undertale / Deltarune</h4>
                         <p>by Toby Fox.</p>
                         <div class="d-flex justify-content-center">
-                            <img src="../images/underrune.png" class="rounded game-image">
+                            <img src="../images/underrune.png" class="rounded game-image" alt="underrune">
                         </div>
                     </div>
                     <div class="text-center mt-2">
                         <h4>2. Subnautica Series</h4>
                         <p>by Unknown Worlds Entertainment</p>
                         <div class="d-flex justify-content-center">
-                            <img src="../images/subnautica.jpg" class="rounded game-image">
+                            <img src="../images/subnautica.jpg" class="rounded game-image" alt="subnautica">
                         </div>
                     </div>
                     <div class="text-center mt-2">
                         <h4>3. Bioshock Series</h4>
                         <p>by 2K Games.</p>
                         <div class="d-flex justify-content-center">
-                            <img src="../images/Bioshock.png" class="rounded game-image">
+                            <img src="../images/Bioshock.png" class="rounded game-image" alt="bioshock">
                         </div>
                     </div>
                     <div class="text-center mt-2">
                         <h4>4. Minecraft</h4>
                         <p>by Mojang Studios.</p>
                         <div class="d-flex justify-content-center">
-                            <img src="../images/minecraft.jpg" class="rounded game-image">
+                            <img src="../images/minecraft.jpg" class="rounded game-image" alt="minecraft">
                         </div>
                     </div>
                 </div>
             </article>
-            <article class="rounded-border mt-3">               
-                <h3>♫ Music</h3>
+            <article class="rounded-border mt-3 non-parallax">               
+                <h3><span class="icon-music"></span> Music</h3>
                     <ul class="text-center no-bullets">
                         <li>
                             <h4>1. Death by Glamour</h4>
@@ -82,7 +82,7 @@
                             <h4>2. Alastor's Game</h4>
                             <p>From Hazbin Hotel by The Living Tombstone.</p>
                             <audio controls>
-                                <source src="../sounds/The Living Tombstone - Alastor's Game.mp3" type="audio/mpeg">
+                                <source src="../sounds/The_Living_Tombstone_-_Alastor's_Game.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                         </li>
@@ -90,41 +90,41 @@
                             <h4>3. Shinzou wo Sasageyo!</h4>
                             <p>From Attack on Titan by Linked Horizon.</p>
                             <audio controls>
-                                <source src="../sounds/Shinzou wo Sasageyo! by Linked Horizon.mp3" type="audio/mpeg">
+                                <source src="../sounds/Shinzou_wo_Sasageyo!_by_Linked_Horizon.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                         </li>
                     </ul>    
             </article>
-            <article class="rounded-border mt-3">
-                <h3>🖵 Anime & Serials & Movies & Books</h3>
+            <article class="rounded-border mt-3 non-parallax">
+                <h3><span class="icon-film"></span> Anime & Serials & Movies & Books <span class="icon-books"></span></h3>
                 <div class="container">
                     <div class="text-center">
                         <h4>1. Attack on Titan</h4>
                         <p>by Hajime Isayama.</p>
                         <div class="d-flex justify-content-center">
-                            <img src="../images/attack-on-titan_2.png" class="rounded game-image">
+                            <img src="../images/attack-on-titan_2.png" class="rounded game-image" alt="aot">
                         </div>
                     </div>
                     <div class="text-center mt-2">
                         <h4>2. The Owl House</h4>
                         <p>by Dana Terrace.</p>
                         <div class="d-flex justify-content-center">
-                            <img src="../images/the_owl_house.png" class="rounded game-image">
+                            <img src="../images/the_owl_house.png" class="rounded game-image" alt="owl house">
                         </div>
                     </div>
                     <div class="text-center mt-2">
                         <h4>3. Lord of The Rings</h4>
                         <p>by John Ronald Reuel Tolkien.</p>
                         <div class="d-flex justify-content-center">
-                            <img src="../images/lotr_back.png" class="rounded game-image">
+                            <img src="../images/lotr_back.png" class="rounded game-image" alt="lotr">
                         </div>
                     </div>
                     <div class="text-center mt-2">
                         <h4>4. Inheritance Cycle</h4>
                         <p>by Christopher Paolini.</p>
                         <div class="d-flex justify-content-center">
-                            <img src="../images/Inheritance_Cycle.png" class="rounded game-image">
+                            <img src="../images/Inheritance_Cycle.png" class="rounded game-image" alt="eragon">
                         </div>
                     </div>
                 </div>
