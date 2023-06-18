@@ -1,5 +1,5 @@
 Link to Github pages:
-https://ondrejduda022.github.io/index.html
+https://ondrejduda022.github.io/ZALP1B_Duda_Vlastni_web_Mettod99/
 
 Link to original assignment:
 https://github.com/pslib-cz/2022-p1b-web-vlastni-web-OndrejDuda022
